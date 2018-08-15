@@ -22,10 +22,10 @@ apt-get install -y docker.io curl git pwgen whois open-vm-tools
 rm -f /etc/update-motd.d/*
 
 ## Copy: Recursive is lower case -r -- why ever
-cp -r $INSTALL_DIR/rc.local /etc/
+cp -r $INSTALL_DIR/etc/rc.local /etc/
 chmod +x /etc/rc.local
 
-cp -r $INSTALL_DIR/update-motd.d/* /etc/update-motd.d/
+cp -r $INSTALL_DIR/etc/update-motd.d/* /etc/update-motd.d/
 chmod +x /etc/update-motd.d/*
 
 
