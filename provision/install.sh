@@ -19,7 +19,7 @@ apt-get install -y docker.io curl git pwgen whois open-vm-tools
  passwd -d user
 
 ## Copy files
-rm /etc/update-motd.d/*
+rm -f /etc/update-motd.d/*
 cp -R $INSTALL_DIR/* /etc/
 chmod -x /etc/rc.local
 chmod -x /etc/update-motd.d/*
