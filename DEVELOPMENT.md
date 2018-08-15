@@ -11,7 +11,7 @@ select `install ssh server`
 Then, login to the image using ssh as user and  run this script:
 
 ````
-sudo apt-get install git && cd /tmp/ && sudo git clone https://github.com/infracamp/kickguest-win10-vmware.git && . /tmp/kickguest-win10-vmware/provision/install.sh
+sudo apt-get install git && cd /tmp/ && sudo git clone https://github.com/infracamp/kickguest-win10-vmware.git && sudo . /tmp/kickguest-win10-vmware/provision/install.sh
 ````
 
 
