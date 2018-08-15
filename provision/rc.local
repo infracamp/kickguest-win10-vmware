@@ -1,0 +1,15 @@
+#!/bin/bash
+
+vmhgfs-fuse .host:$(vmware-hgfsclient) /mnt -o allow_other
+
+echo "KickGuest VMware :: happy containers"
+echo ""
+echo "Login....: ssh root@192.168.48.128"
+echo "Browser..: http://192.168.48.128"
+echo "Your Data: /mnt"
+echo ""
+echo "Questions: see http://infracamp.org"
+
+sudo -E -u user /bin/bash
+
+

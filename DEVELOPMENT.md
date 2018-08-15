@@ -1,0 +1,29 @@
+# How to develop this piece of software.
+
+Download the free vmware runner and install
+ubuntu server using the default image. Select `minimal virtual maschine`,
+select `install ssh server`
+
+- Create a user `user` with password `pass` (the password will be removed later)
+
+## The provision script
+
+Then, login to the image using ssh as user and  run this script:
+
+````
+sudo apt-get install git && cd /root/ && git clone 
+````
+
+
+## Descision about preinstalled packages
+
+- Why do we need `whois`-Package?
+
+The `mkpasswd`-script is located inside to create strong hashed
+passwords. You'll need strongly hashed passwords everywhere in public
+cloud infrastructure - so we'll make it easy to create hashes.
+
+- What's about `open-vm-tools`?
+
+This is used to mount the host filesystems into the container.
+(Open Source version of VMwares TOOLS)
