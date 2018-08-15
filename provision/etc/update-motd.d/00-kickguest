@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#
+# This message is shown on login
+#
+
+echo ""
+echo "infracamp's kickguest VMware :: happy containers"
+echo "------------------------------------------------"
+echo ""
+echo "SSH login......: ssh user@192.168.48.128"
+echo "Browser........: http://192.168.48.128"
+echo ""
+echo "Mounted folders: /mnt"
+echo ""
+echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+echo "Questions? visit http://infracamp.org"
+echo ""
