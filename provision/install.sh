@@ -5,6 +5,8 @@ set -e
 
 INSTALL_DIR=/tmp/kickguest-win10-vmware/provision
 
+apt-get update
+
 ## We want empty passwords for ssh:
 echo "PermitEmptyPasswords yes" >> /etc/ssh/sshd_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
