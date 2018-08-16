@@ -28,7 +28,7 @@ chmod +x /etc/rc.local
 cp -r $INSTALL_DIR/etc/update-motd.d/* /etc/update-motd.d/
 chmod +x /etc/update-motd.d/*
 
-
+cp $INSTALL_DIR/etc/issue /etc/
 
 echo "DONE!"
 

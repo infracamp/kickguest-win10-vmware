@@ -10,12 +10,14 @@ then
 fi;
 
 
+IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
+
 echo ""
 echo "infracamp's KickGuest VMware :: happy containers"
 echo "------------------------------------------------"
 echo ""
-echo "SSH login.........: ssh user@192.168.48.128"
-echo "Browser...........: http://192.168.48.128"
+echo "SSH login.........: ssh user@$IPADDR"
+echo "Browser...........: http://$IPADDR"
 echo ""
 echo "Mounted folders...: /mnt"
 echo ""
