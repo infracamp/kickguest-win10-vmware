@@ -4,11 +4,6 @@
 # This message is shown on login
 #
 
-if [ ! -e /mnt/id_rsa.pub ]
-then
-    echo "You don't have a ssh key. We will create some for you..."
-fi;
-
 
 IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
 
@@ -27,7 +22,9 @@ echo ""
 
 if [ -e /home/user/.ssh/id_*.pub ]
 then
-    echo "Your SSH Public Key: $(cat  /home/user/.ssh/id_*.pub)"
+    echo "------ Your SSH Public Key: ----------";
+    echo $(cat  /home/user/.ssh/id_*.pub);
+    echo "--- Copy this key to github/gitlab ---";
 fi;
 
 echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
