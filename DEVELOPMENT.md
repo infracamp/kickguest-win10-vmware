@@ -3,6 +3,7 @@
 Download the free vmware runner and install
 ubuntu server using the default image. Select `minimal virtual maschine`,
 select `install ssh server`
+(don't use vmware user / host setup)
 
 - Create a user `user` with password `pass` (the password will be removed later)
 
