@@ -2,5 +2,8 @@ infracamp's KickGuest VMware        :: happy containers
 -------------------------------------------------------
 See http://infracamp.org for first steps and solutions.
 
-Login: type "user" and press enter.
+Default User....: user
+Default Password: pass
+
+Login: type "user" and press enter. Enter 'pass' as password.
 

@@ -16,7 +16,7 @@ echo ""
 echo -e '\e[0;34m'"infracamp's KickGuest VMware :: happy containers"
 echo -e '\e[0m'"------------------------------------------------"
 echo -e '\e[1;37m'
-echo "SSH login.........: ssh user@$IPADDR"
+echo "SSH login.........: ssh user@$IPADDR (Password: 'pass')"
 echo "Browser...........: http://$IPADDR or http://kickhost (see below)"
 echo "Mounted folders...: /mnt"
 echo -e "\e[0m"
@@ -25,9 +25,9 @@ echo "Windows - add host entry: echo $IPADDR kickhost >> %windir%\System32\drive
 echo ""
 
 
-if [ -e /mnt/id_rsa.pub ]
+if [ -e /home/user/.ssh/id_*.pub ]
 then
-    echo "Your SSH Public Key: $(cat /mnt/id_rsa.pub)"
+    echo "Your SSH Public Key: $(cat  /home/user/.ssh/id_*.pub)"
 fi;
 
 echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"

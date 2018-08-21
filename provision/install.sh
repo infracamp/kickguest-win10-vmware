@@ -18,7 +18,10 @@ apt-get install -y docker.io curl git pwgen whois open-vm-tools
  gpasswd -a user docker
 
 ## Remove the default password from user (login without passwd)
- passwd -d user
+passwd -d user
+
+## Allow empty passwords for ssh (mark as secure tty) - dangerous.
+echo ssh >> /etc/securetty
 
 ## Copy files
 rm -f /etc/update-motd.d/*
