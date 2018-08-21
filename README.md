@@ -11,7 +11,7 @@ on windows 8/10 and macOS.
 
 Map you *Projects* Path to a shared folder. (If unsure, map your home directory):
 
-![setting2](doc/vmware-settings2.png)
+![setting2](doc/vmware-settings2.jpg)
 
 ## Run the image
 
