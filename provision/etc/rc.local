@@ -3,7 +3,7 @@
 
 
 echo "Mounting $(vmware-hgfsclient) to /mnt"
-vmhgfs-fuse .host:$(vmware-hgfsclient) /mnt -o allow_other -o noempty
+vmhgfs-fuse .host:$(vmware-hgfsclient) /mnt -o allow_other -o nonempty
 
 if [ ! -e /mnt/.ssh ]
 then

@@ -12,10 +12,10 @@ echo "PermitEmptyPasswords yes" >> /etc/ssh/sshd_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 
 ## Install the packages
-apt-get install -y docker.io curl git pwgen whois open-vm-tools
+apt-get install -y docker.io curl git pwgen whois open-vm-tools vim
 
 ## Allow normal user to access docker command
- gpasswd -a user docker
+gpasswd -a user docker
 
 ## Remove the default password from user (login without passwd)
 passwd -d user
