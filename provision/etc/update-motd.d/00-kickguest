@@ -5,8 +5,10 @@
 #
 
 
+
 IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
 
+echo ""
 echo ""
 echo -e '\e[0;34m'"infracamp's KickGuest VMware :: happy containers"
 echo -e '\e[0m'"------------------------------------------------"
@@ -27,6 +29,7 @@ then
     echo "--- Copy this key to github/gitlab ---";
 fi;
 
+echo ""
 echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 echo "Questions? visit http://infracamp.org"
 echo ""
